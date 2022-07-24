@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_1_medium" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_1_small" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_one/Day1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/Day2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/driver/Driver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_one/Day1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_two/Day2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_2_medium" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_2_small" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/Day2PartOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/Day2PartTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/entity/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_two/Day2PartOneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_two/Day2PartTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +52,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -66,10 +60,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="day_two" />
+      <recent name="day_one" />
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day1PartTwoTest">
+  <component name="RunManager" selected="JUnit.Day2PartTwoTest">
     <configuration name="Day1PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -100,8 +96,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day2PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_two" />
+      <option name="MAIN_CLASS_NAME" value="day_two.Day2PartOneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2PartOneTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_two" />
+      <option name="MAIN_CLASS_NAME" value="day_two.Day2PartOneTest" />
+      <option name="METHOD_NAME" value="testFileInputSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day2PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_two.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_two" />
+      <option name="MAIN_CLASS_NAME" value="day_two.Day2PartTwoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day2PartTwoTest" />
+        <item itemvalue="JUnit.Day2PartOneTest" />
+        <item itemvalue="JUnit.Day2PartOneTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day1PartTwoTest" />
         <item itemvalue="JUnit.Day1PartOneTest" />
       </list>
@@ -115,7 +160,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658699040286</updated>
-      <workItem from="1658699041521" duration="4269000" />
+      <workItem from="1658699041521" duration="6796000" />
     </task>
     <servers />
   </component>
