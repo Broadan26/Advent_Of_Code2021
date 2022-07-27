@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Input/input_day_2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_2_medium" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_2_small" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/Day2PartOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/Day2PartTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_two/entity/Direction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_two/Day2PartOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_two/Day2PartTwoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_3_medium" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_3_small" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_three/Day3PartOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_three/Day3PartTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_three/Day3PartOneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_three/Day3PartTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,23 +41,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="day_two" />
@@ -65,37 +65,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day2PartTwoTest">
-    <configuration name="Day1PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_one.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_one" />
-      <option name="MAIN_CLASS_NAME" value="day_one.Day1PartOneTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day1PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_one.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_one" />
-      <option name="MAIN_CLASS_NAME" value="day_one.Day1PartTwoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day3PartTwoTest">
     <configuration name="Day2PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -142,13 +112,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day3PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_three" />
+      <option name="MAIN_CLASS_NAME" value="day_three.Day3PartOneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day3PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_three.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_three" />
+      <option name="MAIN_CLASS_NAME" value="day_three.Day3PartTwoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day3PartTwoTest" />
+        <item itemvalue="JUnit.Day3PartOneTest" />
         <item itemvalue="JUnit.Day2PartTwoTest" />
         <item itemvalue="JUnit.Day2PartOneTest" />
         <item itemvalue="JUnit.Day2PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day1PartTwoTest" />
-        <item itemvalue="JUnit.Day1PartOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +160,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1658699040286</updated>
-      <workItem from="1658699041521" duration="6796000" />
+      <workItem from="1658699041521" duration="9569000" />
+      <workItem from="1658886339158" duration="63000" />
+      <workItem from="1658886539112" duration="72000" />
+      <workItem from="1658886617884" duration="11044000" />
     </task>
     <servers />
   </component>
