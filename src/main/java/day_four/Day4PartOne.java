@@ -74,7 +74,7 @@ public class Day4PartOne {
                     row.remove(number);
                     // Calculate winning board score
                     if (row.isEmpty()) {
-                        return number * calculateBoardScore(allBoardColumns.get(board));
+                        return number * calculateBoardScore(allBoardRows.get(board));
                     }
                 }
 

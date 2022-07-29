@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Input/input_day_4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_4_medium" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_4_small" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartTwoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/b/4bf8dc8eb2bb292e721ff1c26407cd326af9f9f3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb4691147c36d03c8eae712a6e30942867d71ec1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_four/Day4PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_four/Day4PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_four/Day4PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_four/Day4PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,22 +61,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day4PartOneTest">
-    <configuration name="Day2PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_two.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_two" />
-      <option name="MAIN_CLASS_NAME" value="day_two.Day2PartTwoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day4PartTwoTest">
     <configuration name="Day3PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -144,13 +123,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day4PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_four.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_four" />
+      <option name="MAIN_CLASS_NAME" value="day_four.Day4PartTwoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day4PartTwoTest" />
         <item itemvalue="JUnit.Day4PartOneTest" />
         <item itemvalue="JUnit.Day4PartOneTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day3PartTwoTest" />
         <item itemvalue="JUnit.Day3PartOneTest" />
-        <item itemvalue="JUnit.Day2PartTwoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -166,7 +160,7 @@
       <workItem from="1658886339158" duration="63000" />
       <workItem from="1658886539112" duration="72000" />
       <workItem from="1658886617884" duration="11732000" />
-      <workItem from="1659062933573" duration="7774000" />
+      <workItem from="1659062933573" duration="10446000" />
     </task>
     <servers />
   </component>

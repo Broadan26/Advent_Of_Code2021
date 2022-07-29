@@ -11,14 +11,14 @@ class Day4PartOneTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day4PartOne day4 = new Day4PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_4_small");
-        assertEquals(45511, day4.calculateBestBoard());
+        assertEquals(40470, day4.calculateBestBoard());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day4PartOne day4 = new Day4PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_4_medium");
-        assertEquals(45511, day4.calculateBestBoard());
+        assertEquals(40470, day4.calculateBestBoard());
     }
 
     @Test
