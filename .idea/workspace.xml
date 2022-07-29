@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day_four/Day4PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day_four/Day4PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_four/Day4PartTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day_four/Day4PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartOneTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day_four/Day4PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_four/Day4PartTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +158,8 @@
       <workItem from="1658886339158" duration="63000" />
       <workItem from="1658886539112" duration="72000" />
       <workItem from="1658886617884" duration="11732000" />
-      <workItem from="1659062933573" duration="10446000" />
+      <workItem from="1659062933573" duration="10585000" />
+      <workItem from="1659076872011" duration="40000" />
     </task>
     <servers />
   </component>
