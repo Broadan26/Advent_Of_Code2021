@@ -37,12 +37,8 @@ X
 (src/main/java/day_three/Day3PartTwo.java,4\5\45bb64450df2b07a041f1dbf53dde5c9ab3c0180
 G
 Input/input_day_4_small,e\6\e663b13c7fafd9ae00d24e48a7e55d930c7c6404
-V
-&src/main/java/day_one/Day1PartOne.java,c\b\cb4691147c36d03c8eae712a6e30942867d71ec1
 H
 Input/input_day_4_medium,a\5\a5b9c1d792400a7cc7dc2383344e03393d7d4b87
-Z
-*src/test/java/day_one/Day1PartOneTest.java,4\b\4bf8dc8eb2bb292e721ff1c26407cd326af9f9f3
 A
 Input/input_day_4,1\d\1da29469f415c1144fb4ea2eb1ea4c513733572b
 [
