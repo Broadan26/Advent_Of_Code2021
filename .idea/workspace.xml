@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Input/input_day_6_small" beforeDir="false" afterPath="$PROJECT_DIR$/Input/input_day_6_small" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day_six/Day6PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_six/Day6PartOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day_six/Day6PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_six/Day6PartOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_six/Day6PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_six/Day6PartTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_six/Day6PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_six/Day6PartTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,23 +59,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day6PartOneTest">
-    <configuration name="Day5PartOneTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_five.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_five" />
-      <option name="MAIN_CLASS_NAME" value="day_five.Day5PartOneTest" />
-      <option name="METHOD_NAME" value="testFileInputSmall" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day6PartTwoTest">
     <configuration name="Day5PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -88,22 +71,6 @@
       <option name="PACKAGE_NAME" value="day_five" />
       <option name="MAIN_CLASS_NAME" value="day_five.Day5PartTwoTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day5PartTwoTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_five.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_five" />
-      <option name="MAIN_CLASS_NAME" value="day_five.Day5PartTwoTest" />
-      <option name="METHOD_NAME" value="testFileInputSmall" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -139,13 +106,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day6PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_six.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_six" />
+      <option name="MAIN_CLASS_NAME" value="day_six.Day6PartTwoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day6PartTwoTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_six.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_six" />
+      <option name="MAIN_CLASS_NAME" value="day_six.Day6PartTwoTest" />
+      <option name="METHOD_NAME" value="testFileInputSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day6PartTwoTest" />
+        <item itemvalue="JUnit.Day6PartTwoTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day6PartOneTest" />
         <item itemvalue="JUnit.Day6PartOneTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day5PartTwoTest" />
-        <item itemvalue="JUnit.Day5PartTwoTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day5PartOneTest.testFileInputSmall" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +161,7 @@
       <workItem from="1658886617884" duration="11732000" />
       <workItem from="1659062933573" duration="10585000" />
       <workItem from="1659076872011" duration="107000" />
-      <workItem from="1659242511789" duration="13239000" />
+      <workItem from="1659242511789" duration="13619000" />
     </task>
     <servers />
   </component>
