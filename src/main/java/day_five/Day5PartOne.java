@@ -119,6 +119,7 @@ public class Day5PartOne {
 
     /**
      * Reads the file in the class and organizes it into a list of tuple arrays with start and end coordinates.
+     * Excludes 45 degree diagonal lines per prompt.
      *
      * @return A list of Integers from the inputted file
      */
