@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Input/input_day_7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_7_medium" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Input/input_day_7_small" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartOneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day_six/Day6PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_six/Day6PartTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day_six/Day6PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_six/Day6PartTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,22 +65,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day6PartTwoTest">
-    <configuration name="Day5PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_five.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_five" />
-      <option name="MAIN_CLASS_NAME" value="day_five.Day5PartTwoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day7PartOneTest">
     <configuration name="Day6PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -86,22 +77,6 @@
       <option name="PACKAGE_NAME" value="day_six" />
       <option name="MAIN_CLASS_NAME" value="day_six.Day6PartOneTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day6PartOneTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_six.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_six" />
-      <option name="MAIN_CLASS_NAME" value="day_six.Day6PartOneTest" />
-      <option name="METHOD_NAME" value="testFileInputSmall" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,13 +112,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day7PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_seven" />
+      <option name="MAIN_CLASS_NAME" value="day_seven.Day7PartOneTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day7PartOneTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_seven.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_seven" />
+      <option name="MAIN_CLASS_NAME" value="day_seven.Day7PartOneTest" />
+      <option name="METHOD_NAME" value="testFileInputSmall" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day7PartOneTest" />
+        <item itemvalue="JUnit.Day7PartOneTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day6PartTwoTest" />
         <item itemvalue="JUnit.Day6PartTwoTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day6PartOneTest" />
-        <item itemvalue="JUnit.Day6PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day5PartTwoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +167,8 @@
       <workItem from="1658886617884" duration="11732000" />
       <workItem from="1659062933573" duration="10585000" />
       <workItem from="1659076872011" duration="107000" />
-      <workItem from="1659242511789" duration="13619000" />
+      <workItem from="1659242511789" duration="13694000" />
+      <workItem from="1659846807709" duration="3902000" />
     </task>
     <servers />
   </component>
