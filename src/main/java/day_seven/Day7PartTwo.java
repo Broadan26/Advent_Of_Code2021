@@ -25,6 +25,12 @@ public class Day7PartTwo {
         logger = LoggerFactory.getLogger(Day7PartTwo.class);
     }
 
+    /**
+     * Calculates the minimum fuel cost and associated position to make all values in the input the equal.
+     * Fuel cost follows the series 1 + 2 + 3 + 4... for subsequent moves.
+     *
+     * @return An integer representing the minimum number of fuel cost.
+     */
     public long calculateFuelCost() {
         // Read the file and get the inputs
         var horizontalList = readFile();

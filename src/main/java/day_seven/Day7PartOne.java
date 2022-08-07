@@ -27,6 +27,11 @@ public class Day7PartOne {
         logger = LoggerFactory.getLogger(Day7PartOne.class);
     }
 
+    /**
+     * Calculates the minimum moves and associated position to make all values in the input the equal.
+     *
+     * @return An integer representing the minimum number of moves.
+     */
     public int calculateFuelCost() {
         // Read the file and get the inputs
         var horizontalList = readFile();
