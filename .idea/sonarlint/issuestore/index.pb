@@ -65,8 +65,6 @@ W
 'src/main/java/day_five/Day5PartTwo.java,2\a\2a663b7700fe7c7ae21441d536375aa3798c0aab
 H
 Input/input_day_6_medium,a\d\ad69e32c63cd83fd4cafed30d914c5db7c2a908e
-W
-'src/main/java/day_five/Day5PartOne.java,b\7\b7e7863fc03a3fa6065c38b8ac9a849fc99c408f
 A
 Input/input_day_6,7\e\7e02c9476ba9f511f5c169d7b05b66715b43f2ef
 [
