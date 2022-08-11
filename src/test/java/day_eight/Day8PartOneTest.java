@@ -10,14 +10,14 @@ class Day8PartOneTest {
     @Test
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
-        Day8PartOne day8 = new Day8PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_8_small");
+        Day8PartOne day8 = new Day8PartOne("Input/input_day_8_small");
         assertEquals(-1, day8.findObviousDigits());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
-        Day8PartOne day8 = new Day8PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_8_medium");
+        Day8PartOne day8 = new Day8PartOne("Input/input_day_8_medium");
         assertEquals(-1, day8.findObviousDigits());
     }
 
