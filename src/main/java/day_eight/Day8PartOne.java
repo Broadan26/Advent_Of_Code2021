@@ -45,6 +45,11 @@ public class Day8PartOne {
         return countUniqueSegments;
     }
 
+    /**
+     * Counts the number of distinct digits in the list of digits provided.
+     * @param digitList An array list containing the multiple lists of digits to count for uniques
+     * @return The count of all the unique digits present in the digitList
+     */
     private int countUniqueSegments(ArrayList<ArrayList<String>> digitList) {
         int count = 0;
         for (var digits : digitList) {

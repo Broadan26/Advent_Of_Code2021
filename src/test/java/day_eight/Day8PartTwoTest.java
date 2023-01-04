@@ -11,17 +11,20 @@ class Day8PartTwoTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day8PartTwo day8 = new Day8PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_8_small");
+        assertEquals(61229, day8.calculateSumOfDigits());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day8PartTwo day8 = new Day8PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_8_medium");
+        assertEquals(-1, day8.calculateSumOfDigits());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day8PartTwo day8 = new Day8PartTwo();
+        assertEquals(-1, day8.calculateSumOfDigits());
     }
 }
