@@ -7,11 +7,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 
 public class Day8PartOne {
-
-    private static final ArrayList<HashSet<Character>> digits = new ArrayList<>();
 
     private final Logger logger;
     private final String filePath;
@@ -32,12 +29,39 @@ public class Day8PartOne {
      * @return The number of instances of 1,4,7,8 that appear in the digits input
      */
     public int findObviousDigits() {
+        // Contains elements before `|`
+        // Useful for parsing harder digits in part 2
         var signalPatterns = readSignalPatterns();
+
+        // Contains elements after `|`
         var digitList = readDigits();
 
+        // Counts the digits with a unique number of segments
+        // Unique: 1, 4, 7, 8 (with unique segments of 2, 4, 3, 7 respectively)
+        // Same 1: 0, 6, 9 (with 6 segments each)
+        // Same 2: 2, 3, 5 (with 5 segments each)
+        var countUniqueSegments = countUniqueSegments(digitList);
 
+        return countUniqueSegments;
+    }
 
-        return -1;
+    private int countUniqueSegments(ArrayList<ArrayList<String>> digitList) {
+        int count = 0;
+        for (var digits : digitList) {
+            for (String digit : digits) {
+                switch(digit.length()) {
+                    case 2: // Digit 1
+                    case 3: // Digit 7
+                    case 4: // Digit 4
+                    case 7: // Digit 8
+                        count++;
+                        break;
+                    default:
+                        continue;
+                }
+            }
+        }
+        return count;
     }
 
     /**
