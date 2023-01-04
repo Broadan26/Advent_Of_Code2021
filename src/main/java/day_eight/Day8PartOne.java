@@ -14,7 +14,7 @@ public class Day8PartOne {
     private final String filePath;
 
     public Day8PartOne() {
-        this.filePath = "D:\\Projects\\AdventOfCode2021\\Input\\input_day_8";
+        this.filePath = "Input/input_day_8";
         logger = LoggerFactory.getLogger(Day8PartOne.class);
     }
 

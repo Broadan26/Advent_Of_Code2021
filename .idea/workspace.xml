@@ -9,7 +9,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartTwo.java" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_seven/Day7PartTwoTest.java" afterDir="false" />
+>>>>>>> b1fdfd29c2c603edac87ed8a0cf863703d136929
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,8 +72,13 @@
       <recent name="day1" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="JUnit.Day8PartTwoTest.testFileInputSmall">
     <configuration name="Day8PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+  <component name="RunManager" selected="JUnit.Day7PartOneTest">
+    <configuration name="Day7PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> b1fdfd29c2c603edac87ed8a0cf863703d136929
       <module name="AdventOfCode2021" />
       <extension name="coverage">
         <pattern>
@@ -145,11 +159,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.Day8PartTwoTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day8PartOneTest" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputLarge" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputMedium" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputSmall" />
+=======
+        <item itemvalue="JUnit.Day7PartOneTest" />
+        <item itemvalue="JUnit.Day8PartOneTest.testFileInputSmall" />
+        <item itemvalue="JUnit.Day7PartTwoTest" />
+        <item itemvalue="JUnit.Day7PartTwoTest.testFileInputSmall" />
+        <item itemvalue="JUnit.Day7PartOneTest.testFileInputSmall" />
+>>>>>>> b1fdfd29c2c603edac87ed8a0cf863703d136929
       </list>
     </recent_temporary>
   </component>

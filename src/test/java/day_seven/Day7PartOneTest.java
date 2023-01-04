@@ -10,14 +10,14 @@ class Day7PartOneTest {
     @Test
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
-        Day7PartOne day7 = new Day7PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_7_small");
+        Day7PartOne day7 = new Day7PartOne("Input/input_day_7_small");
         assertEquals(37, day7.calculateFuelCost());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
-        Day7PartOne day7 = new Day7PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_7_small");
+        Day7PartOne day7 = new Day7PartOne("Input/input_day_7_small");
         assertEquals(37, day7.calculateFuelCost());
     }
 
