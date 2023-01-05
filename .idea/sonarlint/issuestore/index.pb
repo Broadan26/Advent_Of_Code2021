@@ -43,8 +43,6 @@ A
 +src/test/java/day_four/Day4PartTwoTest.java,3\a\3aa57b4b5ddae453435060462159cd0c0307877e
 W
 'src/main/java/day_four/Day4PartTwo.java,f\c\fcb12353cca43f569ec03b98755e29b0d18d3c0c
-9
-	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 [
 +src/test/java/day_four/Day4PartOneTest.java,9\b\9b96de8c04369f7ef708f01967c6dbc9e3cc8164
 W
@@ -103,3 +101,13 @@ P
  src/main/java/driver/Driver.java,1\b\1b84a78408d335b7ea771ff32fbbd45b2cee2f3b
 A
 Input/input_day_8,3\e\3e445aceebefffda63f4ccc11172c91bf17c026a
+G
+Input/input_day_8_small,a\5\a5978add9364523ab26c4c6a99b9f20abf85e404
+\
+,src/test/java/day_eight/Day8PartOneTest.java,5\5\550639cdfe775d9d23be4660a9634bba5807ad75
+X
+(src/main/java/day_eight/Day8PartOne.java,f\8\f8d3a04f8e686ce69c9f73ec06c3365fb0178451
+X
+(src/main/java/day_eight/Day8PartTwo.java,4\e\4e3ef4b1db9e3927c49e4dce61d99ef43e1f12e2
+\
+,src/test/java/day_eight/Day8PartTwoTest.java,b\c\bc98986b00108ce79835b33e293c401d1e2d4bf3
