@@ -38,9 +38,9 @@ public class Day9PartOne {
     }
 
     /**
-     * Performs a DFS on the map and determines if the current spot is a lowest point (Up, Down, Left, Right).
+     * Performs a search on the map and determines if the current spot is a lowest point (Up, Down, Left, Right).
      * Adjusts the sum of the lowest point risk according to finding lowest points.
-     * @param digitMap
+     * @param digitMap A list of the list of digits indicating lowest/highest points from 0-9
      */
     private int determineLowestPoints(ArrayList<ArrayList<Integer>> digitMap) {
         int totalRisk = 0;
