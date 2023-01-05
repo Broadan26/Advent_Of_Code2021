@@ -18,13 +18,13 @@ class Day9PartOneTest {
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day9PartOne day9 = new Day9PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_9_medium");
-        assertEquals(-1, day9.calculateRiskOfLowestPoint());
+        assertEquals(112, day9.calculateRiskOfLowestPoint());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day9PartOne day9 = new Day9PartOne();
-        assertEquals(-1, day9.calculateRiskOfLowestPoint());
+        assertEquals(537, day9.calculateRiskOfLowestPoint());
     }
 }

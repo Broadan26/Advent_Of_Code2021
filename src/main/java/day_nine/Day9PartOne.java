@@ -31,7 +31,48 @@ public class Day9PartOne {
         // Parse the input file into a map of digits
         var digitMap = readDigitMap();
 
-        return -1;
+        // DFS the map to determine the lowest point risk values
+        // Formula: Lowest Point Values + 1
+        // Return the risk of the lowest points
+        return determineLowestPoints(digitMap);
+    }
+
+    /**
+     * Performs a DFS on the map and determines if the current spot is a lowest point (Up, Down, Left, Right).
+     * Adjusts the sum of the lowest point risk according to finding lowest points.
+     * @param digitMap
+     */
+    private int determineLowestPoints(ArrayList<ArrayList<Integer>> digitMap) {
+        int totalRisk = 0;
+        for (int i = 0; i < digitMap.size(); i++) {
+            for (int j = 0; j < digitMap.get(i).size(); j++) {
+                // Booleans to handle checks
+                boolean up = true, down = true, left = true, right = true;
+
+                // Check Up
+                if (i > 0 && digitMap.get(i-1).get(j) <= digitMap.get(i).get(j)) {
+                    up = false;
+                }
+                // Check Down
+                if (i+1 < digitMap.size() && digitMap.get(i+1).get(j) <= digitMap.get(i).get(j)) {
+                    down = false;
+                }
+                // Check Left
+                if (j > 0 && digitMap.get(i).get(j-1) <= digitMap.get(i).get(j)) {
+                    left = false;
+                }
+                // Check Right
+                if (j+1 < digitMap.get(i).size() && digitMap.get(i).get(j+1) <= digitMap.get(i).get(j)) {
+                    right = false;
+                }
+
+                // If all checks are still true, point [i][j] is a lowest point
+                if (up && down && left && right) {
+                    totalRisk += digitMap.get(i).get(j) + 1;
+                }
+            }
+        }
+        return totalRisk;
     }
 
     /**
