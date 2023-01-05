@@ -43,10 +43,6 @@ A
 +src/test/java/day_four/Day4PartTwoTest.java,3\a\3aa57b4b5ddae453435060462159cd0c0307877e
 W
 'src/main/java/day_four/Day4PartTwo.java,f\c\fcb12353cca43f569ec03b98755e29b0d18d3c0c
-[
-+src/test/java/day_four/Day4PartOneTest.java,9\b\9b96de8c04369f7ef708f01967c6dbc9e3cc8164
-W
-'src/main/java/day_four/Day4PartOne.java,5\b\5bd2b41a4a7371f49448dca5d82d09b23990d9fd
 H
 Input/input_day_5_medium,d\9\d9e6f81a164497a60970c56b1590debff341c7ca
 7
@@ -99,9 +95,5 @@ X
 (src/main/java/day_seven/Day7PartTwo.java,4\d\4dda8719af937c658b2c2c3bebb953f5d42dc289
 P
  src/main/java/driver/Driver.java,1\b\1b84a78408d335b7ea771ff32fbbd45b2cee2f3b
-A
-Input/input_day_8,3\e\3e445aceebefffda63f4ccc11172c91bf17c026a
 G
 Input/input_day_8_small,a\5\a5978add9364523ab26c4c6a99b9f20abf85e404
-X
-(src/main/java/day_eight/Day8PartOne.java,f\8\f8d3a04f8e686ce69c9f73ec06c3365fb0178451
