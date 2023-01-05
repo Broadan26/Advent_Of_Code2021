@@ -18,13 +18,13 @@ class Day8PartTwoTest {
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day8PartTwo day8 = new Day8PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_8_medium");
-        assertEquals(-1, day8.calculateSumOfDigits());
+        assertEquals(118066, day8.calculateSumOfDigits());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day8PartTwo day8 = new Day8PartTwo();
-        assertEquals(-1, day8.calculateSumOfDigits());
+        assertEquals(1011284, day8.calculateSumOfDigits());
     }
 }

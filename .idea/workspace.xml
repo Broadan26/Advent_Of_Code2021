@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_eight/Day8PartTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartTwoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_seven/Day7PartTwo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_eight/Day8PartOneTest.java" afterDir="false" />
@@ -69,24 +68,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day8PartTwoTest.testFileInputSmall">
-    <configuration name="Day8PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-  <component name="RunManager" selected="JUnit.Day7PartOneTest">
-    <configuration name="Day7PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_eight.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_eight" />
-      <option name="MAIN_CLASS_NAME" value="day_eight.Day8PartOneTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day8PartTwoTest">
     <configuration name="Day8PartOneTest.testFileInputLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -135,6 +117,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day8PartTwoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_eight.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_eight" />
+      <option name="MAIN_CLASS_NAME" value="day_eight.Day8PartTwoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Day8PartTwoTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -153,16 +150,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day8PartTwoTest" />
         <item itemvalue="JUnit.Day8PartTwoTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day8PartOneTest" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputLarge" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputMedium" />
         <item itemvalue="JUnit.Day8PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day7PartOneTest" />
-        <item itemvalue="JUnit.Day8PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day7PartTwoTest" />
-        <item itemvalue="JUnit.Day7PartTwoTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day7PartOneTest.testFileInputSmall" />
       </list>
     </recent_temporary>
   </component>

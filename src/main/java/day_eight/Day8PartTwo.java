@@ -62,9 +62,28 @@ public class Day8PartTwo {
         var numberList = parseSignalPatterns(signalPatterns);
 
         // Convert digitsList to numbers and get the sum
-
         // Return the sum
-        return -1;
+        return convertDigitsList(digitList, numberList);
+    }
+
+    /**
+     * Converts the inputted digitList values into integers based on the pattern present in the inputted numberList.
+     * Returns the sum of the digitList as a result.
+     * @param digitList The list of digits in their string patterened represetnation
+     * @param numberList The list of conversion patterns for string representations to integer
+     * @return An integer representing the sum of all the digits converted from string representation to integer values
+     */
+    private int convertDigitsList(ArrayList<ArrayList<String>> digitList, ArrayList<HashMap<String,Integer>> numberList) {
+        int total = 0;
+        for (int i = 0; i < digitList.size(); i++) {
+            int newNumber = 0;
+            for (int j = 0; j < digitList.get(i).size(); j++) {
+                int temp = numberList.get(i).get(digitList.get(i).get(j));
+                newNumber = (newNumber * 10) + temp;
+            }
+            total += newNumber;
+        }
+        return total;
     }
 
     /**
