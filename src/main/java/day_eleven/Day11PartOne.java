@@ -36,6 +36,18 @@ public class Day11PartOne {
         return performSteps(octopusMap, numberOfSteps);
     }
 
+    /**
+     * Performs the formula for octopi flashes. Formula:
+     * Step 1: Initially increment all cells by 1.
+     * Step 2: Check for cells with a value > 9. If found, increment all surrounding cells.
+     * Step 3: Repeat step 2 until all cells are 9 or less.
+     * Step 4: Set all cells that flashed to 0.
+     * Step 5: Repeat from step 1
+     * Repeat all steps until numberOfSteps is completed
+     * @param octopusMap The octopus map to be worked with for determining total flashes
+     * @param numberOfSteps How many steps to take when calculating flashes
+     * @return An integer value indicating the total number of flashes that occurred on the map in the given number of steps
+     */
     private int performSteps(ArrayList<ArrayList<Integer>> octopusMap, int numberOfSteps) {
         int totalFlashes = 0;
 
@@ -75,6 +87,12 @@ public class Day11PartOne {
         return totalFlashes;
     }
 
+    /**
+     * Increments every possible cell around the current cell at [row, col] in the map.
+     * @param octopusMap The map of octopi that is currently being worked with
+     * @param row The current map row under consideration
+     * @param col The current map column under consideration
+     */
     private void incrementAllSurroundingOctopi(ArrayList<ArrayList<Integer>> octopusMap, int row, int col) {
         // Check up
         if (row > 0) {
