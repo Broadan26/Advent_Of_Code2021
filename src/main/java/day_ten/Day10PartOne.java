@@ -50,13 +50,14 @@ public class Day10PartOne {
      */
     private int readFile() {
         File file = new File(filePath);
-        var stack = new ArrayDeque<Character>();
         int syntaxErrorScore = 0;
 
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
 
             String line;
             while ((line = bufferedReader.readLine()) != null) {
+                var stack = new ArrayDeque<Character>();
+
                 for (int i = 0; i < line.length(); i++) {
                     // Check if character is an opening brace
                     if (bracePairs.containsKey(line.charAt(i))) {
