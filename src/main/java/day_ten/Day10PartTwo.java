@@ -7,6 +7,8 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 
 public class Day10PartTwo {
@@ -19,6 +21,12 @@ public class Day10PartTwo {
         put('{', '}');
         put('<', '>');
     }};
+    private final HashMap<Character, Integer> braceScoreMap = new HashMap<>() {{
+        put(')', 1);
+        put(']', 2);
+        put('}', 3);
+        put('>', 4);
+    }};
 
     public Day10PartTwo() {
         this.filePath = "D:\\Projects\\AdventOfCode2021\\Input\\input_day_10";
@@ -30,18 +38,50 @@ public class Day10PartTwo {
         logger = LoggerFactory.getLogger(Day10PartTwo.class);
     }
 
-    public int calculateSyntaxErrors() {
-        readFile();
+    /**
+     * Reads the input file and finds the median score of the incomplete brace pairs based on a given map formula
+     * @return The median score of the incomplete brace pairs
+     */
+    public long calculateIncomplete() {
+        // Read the file and organize into incomplete stacks
+        var stackList = readFile();
 
-        return -1;
+        // Create a list of scores based on incomplete stacks
+        var scoreList = calculateLineScores(stackList);
+
+        // Sort the list of scores
+        scoreList.sort(Comparator.naturalOrder());
+
+        // Return the median score
+        return scoreList.get(scoreList.size() / 2);
     }
 
     /**
-     * Reads the input file and while parsing calculates the syntax error score of the input file
-     * @return An integer representing the sum of all the syntax scores in the imported file
+     * Calculates the score required to complete the incomplete stacks
+     * @param stackList The list of all the stacks needing a score
+     * @return A list of the scores for every stack in the stacklist
      */
-    private void readFile() {
+    private ArrayList<Long> calculateLineScores(ArrayList<ArrayDeque<Character>> stackList) {
+        var scoreList = new ArrayList<Long>();
+
+        for (var stack : stackList) {
+            long currentScore = 0;
+            while (!stack.isEmpty()) {
+                // Score Formula: currentScore * 5 + braceScore
+                currentScore = (currentScore * 5) + braceScoreMap.get(bracePairs.get(stack.pop()));
+            }
+            scoreList.add(currentScore);
+        }
+        return scoreList;
+    }
+
+    /**
+     * Reads the input file and while parsing looks for incomplete stacks
+     * @return A list of all the incomplete stacks and what remains in those incomplete stacks
+     */
+    private ArrayList<ArrayDeque<Character>> readFile() {
         File file = new File(filePath);
+        var stackList = new ArrayList<ArrayDeque<Character>>();
 
         try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
 
@@ -57,18 +97,25 @@ public class Day10PartTwo {
                     } else if (bracePairs.containsValue(line.charAt(i))) {
                         // If stack is empty, invalid closing brace was found
                         // If the closing brace does not match the opening brace, then invalid closing brace found
-                        // Add the value of that invalid closing brace to syntax error score
+                        // Dump the stack as it's useless and break out of the loop
                         if (stack.isEmpty() || bracePairs.get(stack.pop()) != line.charAt(i)) {
-
+                            stack.clear();
+                            break;
                         }
                         // Something went wrong
                     } else {
                         throw new Exception("Invalid opening/closing character in file");
                     }
                 }
+
+                // If the stack is just incomplete, add it to the stackList for later usage
+                if (!stack.isEmpty()) {
+                    stackList.add(stack);
+                }
             }
         } catch (Exception ex) {
             logger.info(ex.toString());
         }
+        return stackList;
     }
 }

@@ -11,20 +11,20 @@ class Day10PartTwoTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day10PartTwo day10 = new Day10PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_10_small");
-        assertEquals(26397, day10.calculateSyntaxErrors());
+        assertEquals(288957L, day10.calculateIncomplete());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day10PartTwo day10 = new Day10PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_10_medium");
-        assertEquals(-1, day10.calculateSyntaxErrors());
+        assertEquals(4099427724L, day10.calculateIncomplete());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day10PartTwo day10 = new Day10PartTwo();
-        assertEquals(-1, day10.calculateSyntaxErrors());
+        assertEquals(3042730309L, day10.calculateIncomplete());
     }
 }
