@@ -18,13 +18,13 @@ class Day10PartOneTest {
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day10PartOne day10 = new Day10PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_10_medium");
-        assertEquals(-1, day10.calculateSyntaxErrors());
+        assertEquals(28971, day10.calculateSyntaxErrors());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day10PartOne day10 = new Day10PartOne();
-        assertEquals(-1, day10.calculateSyntaxErrors());
+        assertEquals(311949, day10.calculateSyntaxErrors());
     }
 }

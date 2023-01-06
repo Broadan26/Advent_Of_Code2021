@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Input/input_day_10" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_10_medium" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Input/input_day_10_small" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_ten/Day10PartOne.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/day_ten/Day10PartTwo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_ten/Day10PartOneTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/day_ten/Day10PartTwoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/day_ten/Day10PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_ten/Day10PartOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_ten/Day10PartOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_ten/Day10PartOneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,18 +61,66 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day9PartTwoTest">
-    <configuration name="Day9PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Day10PartOneTest">
+    <configuration name="Day10PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="day_nine.*" />
+          <option name="PATTERN" value="day_ten.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="day_nine" />
-      <option name="MAIN_CLASS_NAME" value="day_nine.Day9PartOneTest" />
+      <option name="PACKAGE_NAME" value="day_ten" />
+      <option name="MAIN_CLASS_NAME" value="day_ten.Day10PartOneTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day10PartOneTest.testFileInputLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_ten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_ten" />
+      <option name="MAIN_CLASS_NAME" value="day_ten.Day10PartOneTest" />
+      <option name="METHOD_NAME" value="testFileInputLarge" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day10PartOneTest.testFileInputMedium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_ten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_ten" />
+      <option name="MAIN_CLASS_NAME" value="day_ten.Day10PartOneTest" />
+      <option name="METHOD_NAME" value="testFileInputMedium" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day10PartOneTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode2021" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="day_ten.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="day_ten" />
+      <option name="MAIN_CLASS_NAME" value="day_ten.Day10PartOneTest" />
+      <option name="METHOD_NAME" value="testFileInputSmall" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,61 +140,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day9PartTwoTest.testFileInputLarge" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_nine.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_nine" />
-      <option name="MAIN_CLASS_NAME" value="day_nine.Day9PartTwoTest" />
-      <option name="METHOD_NAME" value="testFileInputLarge" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day9PartTwoTest.testFileInputMedium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_nine.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_nine" />
-      <option name="MAIN_CLASS_NAME" value="day_nine.Day9PartTwoTest" />
-      <option name="METHOD_NAME" value="testFileInputMedium" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Day9PartTwoTest.testFileInputSmall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode2021" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="day_nine.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="day_nine" />
-      <option name="MAIN_CLASS_NAME" value="day_nine.Day9PartTwoTest" />
-      <option name="METHOD_NAME" value="testFileInputSmall" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day10PartOneTest" />
+        <item itemvalue="JUnit.Day10PartOneTest.testFileInputLarge" />
+        <item itemvalue="JUnit.Day10PartOneTest.testFileInputMedium" />
+        <item itemvalue="JUnit.Day10PartOneTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day9PartTwoTest" />
-        <item itemvalue="JUnit.Day9PartTwoTest.testFileInputLarge" />
-        <item itemvalue="JUnit.Day9PartTwoTest.testFileInputMedium" />
-        <item itemvalue="JUnit.Day9PartTwoTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day9PartOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +176,7 @@
       <workItem from="1670940405679" duration="104000" />
       <workItem from="1672848146082" duration="3692000" />
       <workItem from="1672856700006" duration="11500000" />
-      <workItem from="1673019022578" duration="1656000" />
+      <workItem from="1673019022578" duration="4442000" />
     </task>
     <servers />
   </component>
