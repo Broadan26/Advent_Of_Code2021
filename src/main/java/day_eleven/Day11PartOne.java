@@ -28,11 +28,92 @@ public class Day11PartOne {
      * @return An integer representing the number of flashes
      */
     public int calculateOctopiFlashes() {
+        // Read the file to create the octopus map
         var octopusMap = readFile();
 
+        // Perform the number of steps needed for result
+        int numberOfSteps = 100;
+        return performSteps(octopusMap, numberOfSteps);
+    }
 
+    private int performSteps(ArrayList<ArrayList<Integer>> octopusMap, int numberOfSteps) {
+        int totalFlashes = 0;
 
-        return -1;
+        // Run for the number of steps required
+        for (int step = 0; step < numberOfSteps; step++) {
+            // Initially increment every value by 1
+            for (var row : octopusMap) {
+                for (int col = 0; col < row.size(); col++) {
+                    row.set(col, row.get(col)+1);
+                }
+            }
+
+            boolean stepComplete = false;
+            // Check for a step being complete before continuing on
+            while (!stepComplete) {
+                stepComplete = true;
+                for (int row = 0; row < octopusMap.size(); row++) {
+                    for (int col = 0; col < octopusMap.get(row).size(); col++) {
+                        if (octopusMap.get(row).get(col) > 9) {
+                            incrementAllSurroundingOctopi(octopusMap, row, col);
+                            stepComplete = false;
+                        }
+                    }
+                }
+            }
+
+            // Reset all flashed cells to 0
+            for (int row = 0; row < octopusMap.size(); row++) {
+                for (int col = 0; col < octopusMap.get(row).size(); col++) {
+                    if (octopusMap.get(row).get(col) < 0) {
+                        octopusMap.get(row).set(col, 0);
+                        totalFlashes++;
+                    }
+                }
+            }
+        }
+        return totalFlashes;
+    }
+
+    private void incrementAllSurroundingOctopi(ArrayList<ArrayList<Integer>> octopusMap, int row, int col) {
+        // Check up
+        if (row > 0) {
+            // Increment up
+            octopusMap.get(row-1).set(col, octopusMap.get(row-1).get(col) + 1);
+            // Increment up-left diagonal
+            if (col > 0) {
+                octopusMap.get(row-1).set(col-1, octopusMap.get(row-1).get(col-1) + 1);
+            }
+            // Increment up-right diagonal
+            if (col+1 < octopusMap.get(row).size()) {
+                octopusMap.get(row-1).set(col+1, octopusMap.get(row-1).get(col+1) + 1);
+            }
+        }
+        // Check down
+        if (row+1 < octopusMap.size()) {
+            // Increment down
+            octopusMap.get(row+1).set(col, octopusMap.get(row+1).get(col) + 1);
+            // Increment down-left diagonal
+            if (col > 0) {
+                octopusMap.get(row+1).set(col-1, octopusMap.get(row+1).get(col-1) + 1);
+            }
+            // Increment down-right diagonal
+            if (col+1 < octopusMap.get(row).size()) {
+                octopusMap.get(row+1).set(col+1, octopusMap.get(row+1).get(col+1) + 1);
+            }
+        }
+        // Check left
+        if (col > 0) {
+            // Increment left
+            octopusMap.get(row).set(col-1, octopusMap.get(row).get(col-1) + 1);
+        }
+        // Check right
+        if (col+1 < octopusMap.get(row).size()) {
+            // Increment right
+            octopusMap.get(row).set(col+1, octopusMap.get(row).get(col+1) + 1);
+        }
+        // Set current cell to a number that won't reach 0 to indicate it flashed
+        octopusMap.get(row).set(col, Integer.MIN_VALUE);
     }
 
     /**
