@@ -15,6 +15,13 @@ class Day11PartTwoTest {
     }
 
     @Test
+    @DisplayName("Test Medium Input")
+    void testFileInputMedium() {
+        Day11PartTwo day11 = new Day11PartTwo("D:\\Projects\\AdventOfCode2021\\Input\\input_day_11_medium");
+        assertEquals(-1, day11.calculate());
+    }
+
+    @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day11PartTwo day11 = new Day11PartTwo();

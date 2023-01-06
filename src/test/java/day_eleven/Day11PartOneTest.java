@@ -15,6 +15,13 @@ class Day11PartOneTest {
     }
 
     @Test
+    @DisplayName("Test Medium Input")
+    void testFileInputMedium() {
+        Day11PartOne day11 = new Day11PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_11_medium");
+        assertEquals(-1, day11.calculateOctopiFlashes());
+    }
+
+    @Test
     @DisplayName("Test Full Input")
     void testFileInputLarge() {
         Day11PartOne day11 = new Day11PartOne();
