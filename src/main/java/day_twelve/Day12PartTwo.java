@@ -62,7 +62,12 @@ public class Day12PartTwo {
         int paths = 0;
 
         // Already visited this small cavern in the DFS, backtrack
-        if (visitedSmallCaverns.contains(currentCavern)) {
+        if (visitedSmallCaverns.contains(currentCavern) && visitedSmallCaverns.contains("2")) {
+            return 0;
+        }
+
+        // Returned to start, backtrack route
+        if (visitedSmallCaverns.contains("start") && currentCavern.equals("start")) {
             return 0;
         }
 
@@ -73,7 +78,11 @@ public class Day12PartTwo {
 
         // Visiting a small cavern on this branch, mark as visited
         if (currentCavern.toLowerCase().equals(currentCavern)) {
-            visitedSmallCaverns.add(currentCavern);
+            if (visitedSmallCaverns.contains(currentCavern)) {
+                visitedSmallCaverns.add("2");
+            } else {
+                visitedSmallCaverns.add(currentCavern);
+            }
         }
 
         // Iterate all possible DFS paths to the end

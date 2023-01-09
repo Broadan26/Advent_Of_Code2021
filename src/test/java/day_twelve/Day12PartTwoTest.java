@@ -32,6 +32,6 @@ class Day12PartTwoTest {
     @DisplayName("Test Full Input")
     void testFileInput() {
         Day12PartTwo day12PartTwo = new Day12PartTwo();
-        assertEquals(-1, day12PartTwo.findAllPaths());
+        assertEquals(130493, day12PartTwo.findAllPaths());
     }
 }
