@@ -11,27 +11,27 @@ class Day12PartOneTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day12PartOne day12PartOne = new Day12PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_12_small");
-        assertEquals(10, day12PartOne.calculate());
+        assertEquals(10, day12PartOne.calculateTotalPaths());
     }
 
     @Test
     @DisplayName("Test Medium Input")
     void testFileInputMedium() {
         Day12PartOne day12PartOne = new Day12PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_12_medium");
-        assertEquals(19, day12PartOne.calculate());
+        assertEquals(19, day12PartOne.calculateTotalPaths());
     }
 
     @Test
     @DisplayName("Test Large Input")
     void testFileInputLarge() {
         Day12PartOne day12PartOne = new Day12PartOne("D:\\Projects\\AdventOfCode2021\\Input\\input_day_12_large");
-        assertEquals(226, day12PartOne.calculate());
+        assertEquals(226, day12PartOne.calculateTotalPaths());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInput() {
         Day12PartOne day12PartOne = new Day12PartOne();
-        assertEquals(-1, day12PartOne.calculate());
+        assertEquals(-1, day12PartOne.calculateTotalPaths());
     }
 }
