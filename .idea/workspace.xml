@@ -63,7 +63,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day12PartTwoTest">
+  <component name="RunManager" selected="JUnit.Day12PartOneTest">
     <configuration name="Day12PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -144,9 +144,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day12PartOneTest" />
         <item itemvalue="JUnit.Day12PartTwoTest" />
         <item itemvalue="JUnit.Day12PartTwoTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day12PartOneTest" />
         <item itemvalue="JUnit.Day12PartOneTest.testFileInput" />
         <item itemvalue="JUnit.Day12PartOneTest.testFileInputLarge" />
       </list>
