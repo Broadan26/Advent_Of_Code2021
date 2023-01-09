@@ -1,0 +1,12 @@
+
+[	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(Ş¸÷
+G
+java:S3599",Use another way to initialize this instance.(ãœÓıÿÿÿÿ
+t
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ãœÓıÿÿÿÿ
+B
+java:S3599",Use another way to initialize this instance.(€¼ëú
+o
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(€¼ëú
+\
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ƒ½±êüÿÿÿÿ
