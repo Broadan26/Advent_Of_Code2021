@@ -17,7 +17,7 @@ public class Day12PartTwo {
     private final String filePath;
 
     public Day12PartTwo() {
-        this.filePath = "D:\\Projects\\AdventOfCode2021\\Input\\input_day_12";
+        this.filePath = System.getProperty("user.dir") + "\\Input\\input_day_12";
         logger = LoggerFactory.getLogger(Day12PartTwo.class);
     }
 
