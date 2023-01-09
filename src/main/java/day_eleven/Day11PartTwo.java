@@ -13,7 +13,7 @@ public class Day11PartTwo {
     private final String filePath;
 
     public Day11PartTwo() {
-        this.filePath = "D:\\Projects\\AdventOfCode2021\\Input\\input_day_11";
+        this.filePath = System.getProperty("user.dir") + "\\Input\\input_day_11";
         logger = LoggerFactory.getLogger(Day11PartTwo.class);
     }
 
