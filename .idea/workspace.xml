@@ -7,6 +7,7 @@
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_fourteen/Day14PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_fourteen/Day14PartTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_fourteen/Day14PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_fourteen/Day14PartTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +61,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day14PartTwoTest.testFileInputSmall">
+  <component name="RunManager" selected="JUnit.Day14PartTwoTest">
     <configuration name="Day14PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -141,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day14PartTwoTest" />
         <item itemvalue="JUnit.Day14PartTwoTest.testFileInputSmall" />
         <item itemvalue="JUnit.Day14PartTwoTest.testFileInput" />
         <item itemvalue="JUnit.Day14PartOneTest" />
         <item itemvalue="JUnit.Day14PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day14PartTwoTest" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +178,7 @@
       <workItem from="1672856700006" duration="11500000" />
       <workItem from="1673019022578" duration="16945000" />
       <workItem from="1673275911945" duration="21052000" />
-      <workItem from="1673364089375" duration="21932000" />
+      <workItem from="1673364089375" duration="23073000" />
     </task>
     <servers />
   </component>

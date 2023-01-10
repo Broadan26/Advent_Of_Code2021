@@ -52,20 +52,8 @@ public class Day14PartTwo {
         // Separate each pair into its constituent elements for counting
         var countCharacters = new HashMap<Character, Long>();
         for (var key : modifiedTemplate.keySet()) {
-            // Get the first character
-            if (countCharacters.containsKey(key.charAt(0))) {
-                long temp = countCharacters.get(key.charAt(0)) + modifiedTemplate.get(key);
-                countCharacters.replace(key.charAt(0), temp);
-            } else {
-                countCharacters.put(key.charAt(0), modifiedTemplate.get(key));
-            }
-            // Get the second character
-            if (countCharacters.containsKey(key.charAt(1))) {
-                long temp = countCharacters.get(key.charAt(1)) + modifiedTemplate.get(key);
-                countCharacters.replace(key.charAt(1), temp);
-            } else {
-                countCharacters.put(key.charAt(0), modifiedTemplate.get(key));
-            }
+            countCharacters.putIfAbsent(key.charAt(0), 0L);
+            countCharacters.put(key.charAt(0), (countCharacters.get(key.charAt(0)) + modifiedTemplate.get(key)));
         }
         System.out.println(countCharacters);
 
@@ -91,6 +79,11 @@ public class Day14PartTwo {
             } else {
                 templateRebuild.put(subString, 1L);
             }
+        }
+
+        // Ensure that the template rebuild has all possible pairs
+        for (var key : grammarRules.keySet()) {
+            templateRebuild.putIfAbsent(key, 0L);
         }
 
         // Perform all n steps
