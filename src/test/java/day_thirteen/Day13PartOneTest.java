@@ -1,6 +1,5 @@
-package day_13;
+package day_thirteen;
 
-import day_thirteen.Day13PartOne;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
