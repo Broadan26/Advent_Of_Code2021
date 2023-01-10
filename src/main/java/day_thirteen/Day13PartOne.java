@@ -32,12 +32,83 @@ public class Day13PartOne {
         var paperMatrix = createMatrix();
 
         // Create list of instructions
+        var instructionsList = createInstructions();
 
         // Perform folds
+        foldMatrix(paperMatrix, instructionsList);
 
         // Calculate dots remaining
+        return countDots(paperMatrix);
+    }
 
-        return -1;
+    /**
+     * Counts the number of dots present in the 2D matrix after fold(s) have been completed.
+     * @param paperMatrix The 2D matrix that represents a piece of paper with dots on it
+     * @return An integer value representing the number of dots present in the 2D matrix
+     */
+    private int countDots(boolean[][] paperMatrix) {
+        int dotCount = 0;
+        for (boolean[] row : paperMatrix) {
+            for (boolean col : row) {
+                if (col) {
+                    dotCount++;
+                }
+            }
+        }
+        return dotCount;
+    }
+
+    private void foldMatrix(boolean[][] paperMatrix, ArrayList<String[]> instructionsList) {
+        String firstFoldXY = instructionsList.get(0)[0];
+        int firstFoldRowCol = Integer.parseInt(instructionsList.get(0)[1]);
+
+        // Folding on X
+        if (firstFoldXY.equalsIgnoreCase("x")) {
+            for (int row = 0; row < paperMatrix.length; row++) {
+                for (int col = 0; col < paperMatrix[row].length - firstFoldRowCol; col++) {
+                    // Found a dot on side of paper to be folded
+                    if (paperMatrix[row][firstFoldRowCol+col]) {
+                        paperMatrix[row][firstFoldRowCol+col] = false;
+                        paperMatrix[row][firstFoldRowCol-col] = true;
+                    }
+                }
+            }
+        // Folding on Y
+        } else {
+            for (int row = 0; row < paperMatrix.length - firstFoldRowCol; row++) {
+                for (int col = 0; col < paperMatrix[row].length; col++) {
+                    // Found a dot on side of paper to be folded
+                    if (paperMatrix[firstFoldRowCol+row][col]) {
+                        paperMatrix[firstFoldRowCol+row][col] = false;
+                        paperMatrix[firstFoldRowCol-row][col] = true;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Utilizes the input file to create a list of instructions for folding the 2D matrix
+     * @return A list of instructions for folding the 2D matrix
+     */
+    private ArrayList<String[]> createInstructions() {
+        File file = new File(filePath);
+        ArrayList<String[]> instructionsList = new ArrayList<>();
+
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = bufferedReader.readLine()) != null) {
+                // Instructions begin with keyword "fold"
+                if (line.startsWith("fold")) {
+                    String[] fold = line.split("=");
+                    fold[0] = String.valueOf(fold[0].charAt(fold[0].length()-1));
+                    instructionsList.add(fold); // x/y in 0, row/col in 1
+                }
+            }
+        } catch (Exception ex) {
+            logger.info(ex.toString());
+        }
+        return instructionsList;
     }
 
     /**
