@@ -19,7 +19,7 @@ class Day14PartTwoTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day14PartTwo day14PartTwo = new Day14PartTwo(basePath + "\\Input\\input_day_14_small");
-        assertEquals(-1, day14PartTwo.calculate());
+        assertEquals(2188189693529L, day14PartTwo.calculate());
     }
 
     @Test
