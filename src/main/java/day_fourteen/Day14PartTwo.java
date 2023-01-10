@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
+import java.util.Collections;
 import java.util.HashMap;
 
 public class Day14PartTwo {
@@ -68,22 +69,8 @@ public class Day14PartTwo {
         }
         System.out.println(countCharacters);
 
-        // Find most and least
-        long most = Long.MIN_VALUE;
-        long least = Long.MAX_VALUE;
-        for (var key : countCharacters.keySet()) {
-            // Alter most
-            if (countCharacters.get(key) > most) {
-                most = countCharacters.get(key);
-            }
-            // Alter least
-            if (countCharacters.get(key) < least) {
-                least = countCharacters.get(key);
-            }
-        }
-        System.out.println(most);
-        System.out.println(least);
-        return most - least;
+        // Find most and least then take the difference
+        return Collections.max(countCharacters.values()) - Collections.min(countCharacters.values());
     }
 
     /**
@@ -105,7 +92,6 @@ public class Day14PartTwo {
                 templateRebuild.put(subString, 1L);
             }
         }
-        System.out.println(templateRebuild);
 
         // Perform all n steps
         while (steps > 0) {
@@ -114,18 +100,20 @@ public class Day14PartTwo {
             // Modify the template string based on grammar rules
             for (var key : templateRebuild.keySet()) {
                 // Expand the first half
-                if (updatedTemplate.containsKey(key.charAt(0) + grammarRules.get(key))) {
-                    long temp = updatedTemplate.get(key.charAt(0) + grammarRules.get(key)) + templateRebuild.get(key);
-                    updatedTemplate.replace(key.charAt(0) + grammarRules.get(key), temp);
+                String pairOne = key.charAt(0) + grammarRules.get(key);
+                if (updatedTemplate.containsKey(pairOne)) {
+                    long newTotal = updatedTemplate.get(pairOne) + templateRebuild.get(key);
+                    updatedTemplate.replace(pairOne, newTotal);
                 } else {
-                    updatedTemplate.put(key.charAt(0) + grammarRules.get(key), templateRebuild.get(key));
+                    updatedTemplate.put(pairOne, templateRebuild.get(key));
                 }
                 // Expand the second half
-                if (updatedTemplate.containsKey(grammarRules.get(key) + key.charAt(1))) {
-                    long temp = updatedTemplate.get(grammarRules.get(key) + key.charAt(1)) + templateRebuild.get(key);
-                    updatedTemplate.replace(grammarRules.get(key) + key.charAt(1), temp);
+                String pairTwo = grammarRules.get(key) + key.charAt(1);
+                if (updatedTemplate.containsKey(pairTwo)) {
+                    long newTotal = updatedTemplate.get(pairTwo) + templateRebuild.get(key);
+                    updatedTemplate.replace(pairTwo, newTotal);
                 } else {
-                    updatedTemplate.put(grammarRules.get(key) + key.charAt(1), templateRebuild.get(key));
+                    updatedTemplate.put(pairTwo, templateRebuild.get(key));
                 }
             }
             templateRebuild = updatedTemplate;
