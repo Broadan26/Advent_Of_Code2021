@@ -58,6 +58,11 @@ public class Day13PartOne {
         return dotCount;
     }
 
+    /**
+     * Simulates a single fold on the 2D matrix utilizing the list of instructions provided.
+     * @param paperMatrix The 2D matrix that represents a piece of paper with dots on it
+     * @param instructionsList A list of instructions for folding the 2D matrix
+     */
     private void foldMatrix(boolean[][] paperMatrix, ArrayList<String[]> instructionsList) {
         String firstFoldXY = instructionsList.get(0)[0];
         int firstFoldRowCol = Integer.parseInt(instructionsList.get(0)[1]);

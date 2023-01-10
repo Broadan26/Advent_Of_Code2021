@@ -171,9 +171,5 @@ Z
 .src/test/java/day_twelve/Day12PartOneTest.java,e\e\ee409edd126be736008213faaa47bcc3b91208cd
 Z
 *src/main/java/day_twelve/Day12PartOne.java,1\8\1829611ed477e4fa1474ac38bc76d6c2ecf0d18d
-\
-,src/main/java/day_thirteen/Day13PartTwo.java,8\b\8b2596842d7ab9a88353e02f03c50accb5096be3
-Z
-*src/test/java/day_13/Day13PartTwoTest.java,9\e\9e1642e5db8dee71fea2df7d12af1e64fca131ed
 H
 Input/input_day_13_small,6\d\6dd601184731e25bb7bcaaebc7ab47887949eee4
