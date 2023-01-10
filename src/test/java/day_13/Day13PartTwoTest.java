@@ -20,13 +20,13 @@ class Day13PartTwoTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day13PartTwo day13PartTwo = new Day13PartTwo(basePath + "\\Input\\input_day_13_small");
-        assertEquals(-1, day13PartTwo.calculate());
+        assertEquals(16, day13PartTwo.calculateVisibleDots());
     }
 
     @Test
     @DisplayName("Test Full Input")
     void testFileInput() {
         Day13PartTwo day13PartTwo = new Day13PartTwo();
-        assertEquals(-1, day13PartTwo.calculate());
+        assertEquals(93, day13PartTwo.calculateVisibleDots());
     }
 }

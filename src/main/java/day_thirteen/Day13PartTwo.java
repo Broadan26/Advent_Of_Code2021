@@ -64,31 +64,51 @@ public class Day13PartTwo {
      * @param instructionsList A list of instructions for folding the 2D matrix
      */
     private void foldMatrix(boolean[][] paperMatrix, ArrayList<String[]> instructionsList) {
-        String firstFoldXY = instructionsList.get(0)[0];
-        int firstFoldRowCol = Integer.parseInt(instructionsList.get(0)[1]);
+        // Collect matrix dimensions
+        int rowLength = paperMatrix.length;
+        int colLength = paperMatrix[0].length;
 
-        // Folding on X
-        if (firstFoldXY.equalsIgnoreCase("x")) {
-            for (int row = 0; row < paperMatrix.length; row++) {
-                for (int col = 0; col < paperMatrix[row].length - firstFoldRowCol; col++) {
-                    // Found a dot on side of paper to be folded
-                    if (paperMatrix[row][firstFoldRowCol+col]) {
-                        paperMatrix[row][firstFoldRowCol+col] = false;
-                        paperMatrix[row][firstFoldRowCol-col] = true;
+        // Run through the list of instructions
+        for (var instruction : instructionsList) {
+            String firstFoldXY = instruction[0];
+            int firstFoldRowCol = Integer.parseInt(instruction[1]);
+
+            // Folding on X
+            if (firstFoldXY.equalsIgnoreCase("x")) {
+                for (int row = 0; row < rowLength; row++) {
+                    for (int col = 0; col < colLength - firstFoldRowCol; col++) {
+                        // Found a dot on side of paper to be folded
+                        if (paperMatrix[row][firstFoldRowCol + col]) {
+                            paperMatrix[row][firstFoldRowCol + col] = false;
+                            paperMatrix[row][firstFoldRowCol - col] = true;
+                        }
                     }
                 }
-            }
+                colLength = firstFoldRowCol;
             // Folding on Y
-        } else {
-            for (int row = 0; row < paperMatrix.length - firstFoldRowCol; row++) {
-                for (int col = 0; col < paperMatrix[row].length; col++) {
-                    // Found a dot on side of paper to be folded
-                    if (paperMatrix[firstFoldRowCol+row][col]) {
-                        paperMatrix[firstFoldRowCol+row][col] = false;
-                        paperMatrix[firstFoldRowCol-row][col] = true;
+            } else {
+                for (int row = 0; row < rowLength - firstFoldRowCol; row++) {
+                    for (int col = 0; col < colLength; col++) {
+                        // Found a dot on side of paper to be folded
+                        if (paperMatrix[firstFoldRowCol + row][col]) {
+                            paperMatrix[firstFoldRowCol + row][col] = false;
+                            paperMatrix[firstFoldRowCol - row][col] = true;
+                        }
                     }
                 }
+                rowLength = firstFoldRowCol;
             }
+        }
+        // Print the result
+        for (int row = 0; row < rowLength; row++) {
+            for (int col = 0; col < colLength; col++) {
+                if (paperMatrix[row][col]) {
+                    System.out.print("#");
+                } else {
+                    System.out.print(".");
+                }
+            }
+            System.out.println();
         }
     }
 

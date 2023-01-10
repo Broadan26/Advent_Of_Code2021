@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a49d4f84-0bd9-4c9a-b691-acf49e8167bf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8b2596842d7ab9a88353e02f03c50accb5096be3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/e/9e1642e5db8dee71fea2df7d12af1e64fca131ed" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/day_thirteen/Day13PartOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_thirteen/Day13PartOne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/day_thirteen/Day13PartTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/day_thirteen/Day13PartTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/day_13/Day13PartTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/day_13/Day13PartTwoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="day1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day13PartOneTest">
+  <component name="RunManager" selected="JUnit.Day13PartTwoTest">
     <configuration name="Day11PartOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode2021" />
       <extension name="coverage">
@@ -143,9 +140,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day13PartTwoTest" />
         <item itemvalue="JUnit.Day13PartOneTest" />
         <item itemvalue="JUnit.Day13PartOneTest.testFileInputSmall" />
-        <item itemvalue="JUnit.Day13PartTwoTest" />
         <item itemvalue="JUnit.Day11PartTwoTest" />
         <item itemvalue="JUnit.Day11PartOneTest" />
       </list>
@@ -179,7 +176,7 @@
       <workItem from="1672856700006" duration="11500000" />
       <workItem from="1673019022578" duration="16945000" />
       <workItem from="1673275911945" duration="21052000" />
-      <workItem from="1673364089375" duration="5488000" />
+      <workItem from="1673364089375" duration="6687000" />
     </task>
     <servers />
   </component>
