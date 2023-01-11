@@ -19,6 +19,13 @@ class Day15PartOneTest {
     @DisplayName("Test Small Input")
     void testFileInputSmall() {
         Day15PartOne day15PartOne = new Day15PartOne(basePath + "\\Input\\input_day_15_small");
+        assertEquals(40, day15PartOne.calculate());
+    }
+
+    @Test
+    @DisplayName("Test Medium Input")
+    void testFileInputMedium() {
+        Day15PartOne day15PartOne = new Day15PartOne(basePath + "\\Input\\input_day_15_medium");
         assertEquals(-1, day15PartOne.calculate());
     }
 
