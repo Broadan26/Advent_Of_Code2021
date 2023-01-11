@@ -1,0 +1,8 @@
+
+J
+java:S28646"4Iterate over the "entrySet" instead of the "keySet".(˜¨—Â
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(ÆÄáÓþÿÿÿÿ
+m
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(…åÉ°üÿÿÿÿ
+J
+java:S2864^"4Iterate over the "entrySet" instead of the "keySet".(ð«Ä§

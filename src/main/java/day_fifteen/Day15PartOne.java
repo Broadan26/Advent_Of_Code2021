@@ -6,8 +6,9 @@ import org.slf4j.LoggerFactory;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Day15PartOne {
 
@@ -34,55 +35,44 @@ public class Day15PartOne {
     }
 
     private int bfs(ArrayList<ArrayList<Integer>> caveMap) {
-        // Setup the BFS
-        var queue = new ArrayDeque<String>();
-        queue.add(0 + "," + 0);
+        // Set up the BFS
+        var queue = new LinkedList<int[]>();
+        queue.addLast(new int[]{0,0});
+        int rowLength = caveMap.size();
+        int colLength = caveMap.get(0).size();
 
-        // Setup the graph weights assuming each cell has a weight of infinity until visited
+        // Set up the graph weights assuming each cell has a weight of infinity until visited
         int[][] weights = new int[caveMap.size()][caveMap.get(0).size()];
-        for (int row = 0; row < weights.length; row++) {
-            for (int col = 0; col < weights[row].length; col++) {
-                weights[row][col] = 1000000;
-            }
+        for (int[] weight : weights) {
+            Arrays.fill(weight, 1000000);
         }
-        weights[0][0] = 0;
+        weights[0][0] = 0; // Source has weight of 0 since it is starting point
 
         // Perform BFS
         while (!queue.isEmpty()) {
             // Remove and parse element
-            String[] cell = queue.poll().split(",", 2);
-            int row = Integer.parseInt(cell[0]);
-            int col = Integer.parseInt(cell[1]);
+            int[] head = queue.removeFirst();
+            int row = head[0];
+            int col = head[1];
+            //System.out.println("(" + row + "," + col + ")");
 
-            // Skip if cell has been visited
-            if (row < 0 || col < 0 || row >= caveMap.size() || col >= caveMap.get(row).size()) {
-                continue;
-            }
-
-            // Find the min weight
+            // Find the min weights
+            // Check up
             if (row-1 >= 0) {
-                weights[row][col] = Integer.min(weights[row][col], weights[row-1][col] + caveMap.get(row).get(col));
+                weights[row][col] = Math.min(weights[row][col], (weights[row-1][col] + caveMap.get(row).get(col)));
             }
-            if (row+1 < caveMap.size()) {
-                weights[row][col] = Integer.min(weights[row][col], weights[row+1][col] + caveMap.get(row).get(col));
-            }
+            // Check left
             if (col-1 >= 0) {
-                weights[row][col] = Integer.min(weights[row][col], weights[row][col-1] + caveMap.get(row).get(col));
-            }
-            if (col+1 < caveMap.get(row).size()) {
-                weights[row][col] = Integer.min(weights[row][col], weights[row][col+1] + caveMap.get(row).get(col));
+                weights[row][col] = Math.min(weights[row][col], (weights[row][col-1] + caveMap.get(row).get(col)));
             }
 
             // Continue BFS
-            queue.add((row+1) + "," + col); // Go Down
-            queue.add(row + "," + (col+1)); // Go Right
-        }
-
-        for (int[] row: weights) {
-            for (int col : row) {
-                System.out.print(col + " ");
+            if (col+1 < colLength) {
+                queue.addLast(new int[]{row, (col+1)}); // Go Right
             }
-            System.out.println();
+            if (row+1 < rowLength) {
+                queue.addLast(new int[]{(row+1), col}); // Go Down
+            }
         }
 
         return weights[caveMap.size()-1][caveMap.get(0).size()-1];
